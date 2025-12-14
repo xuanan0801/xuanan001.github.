@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Locket Gold - Nâng cấp Premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Locket Gold</h1>
+
+    <!-- Bước 1: nhập username -->
+    <section id="step-1" class="step active">
+      <h2>Nâng cấp tài khoản</h2>
+      <label>
+        Username Locket
+        <input id="username" type="text" placeholder="Nhập username của bạn" />
+      </label>
+      <label>
+        Người giới thiệu (tùy chọn)
+        <input id="referral" type="text" placeholder="Nhập mã giới thiệu (nếu có)" />
+      </label>
+      <button id="start-upgrade">Tiếp tục</button>
+    </section>
+
+    <!-- Bước 2: thông tin nâng cấp -->
+    <section id="step-2" class="step">
+      <h2>Xin chào, <span id="display-username"></span> ✨</h2>
+      <p>Số dư Gold (VNĐ): <strong id="balance">0đ</strong></p>
+      <p>Trạng thái Premium: <strong id="status">Chưa nâng cấp</strong></p>
+
+      <button id="show-qr">Bắt đầu nâng cấp</button>
+
+      <div id="qr-area" class="hidden">
+        <h3>Quét mã QR để thanh toán</h3>
+        <p>(Chỗ này bạn sẽ thay bằng ảnh QR thật sau)</p>
+      </div>
+
+      <button id="download-config">Tải cấu hình</button>
+      <button id="restart">Đổi tài khoản</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
